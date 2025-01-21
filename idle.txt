@@ -10,24 +10,12 @@ Settings
 	background:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/meadow.jpg //arrière-plan de votre jeu
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Centrale.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 	stylesheet:stuff/bigBlue.css
 
 Layout
 	use default
-	
-//Layout
-  //*resources
-   // contains:Resources
-   // header:Ce sont vos ressources.
-//  *buildings
-//    contains:Buildings
-//    header:Ce sont des choses que vous pouvez construire.
-//    tooltip origin:left
-//  *unlockables
- //   contains:Upgrades, Achievements
-  //  names:hide
-		
+			
 Buttons
 	*bunnyButton
 		name:Fabrique du métal
@@ -35,7 +23,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Centrale.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
