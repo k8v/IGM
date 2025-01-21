@@ -1,5 +1,5 @@
 Let's make a game!
-	name:FSHM Clicker
+	name:NUC-Clicker
 	by:K8V
 	desc:"Ceci est un jeu idle simple pour <b>démanteler une centrale</b>. <//> <q>Bonus si tu touches le golden casque de chantier !</q>"
 	created:14/01/2025
