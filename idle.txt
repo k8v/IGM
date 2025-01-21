@@ -35,7 +35,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-		icon:stuff/caillou.png
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
