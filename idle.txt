@@ -7,10 +7,10 @@ Let's make a game!
 	version:1
 
 Settings
-	background:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/meadow.jpg //arrière-plan de votre jeu
+	background:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/background.jpg //arrière-plan de votre jeu
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Icons.png
 	stylesheet:stuff/bigBlue.css
 
 Layout
@@ -51,7 +51,7 @@ Shinies
 		movement:onRight moveLeft fade bounce:0.05
 		frequency:60
 		frequency variation:30
-		icon:stuff/luckyBunny.png
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 		class:bigButton
 		on click:
 			$boost=1
