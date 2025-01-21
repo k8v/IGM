@@ -7,10 +7,10 @@ Let's make a game!
 	version:1
 
 Settings
-	background:stuff/meadow.jpg //arrière-plan de votre jeu
+	background:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/meadow.jpg //arrière-plan de votre jeu
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, stuff/Centrale.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Centrale.png
 	stylesheet:stuff/bigBlue.css
 
 //Layout
