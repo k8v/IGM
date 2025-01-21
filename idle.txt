@@ -34,7 +34,8 @@ Resources
 	*bunny|bunnies
 		name:Bunny|Bunnies
 		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
-		icon:icons[0,0]
+		//icon:icons[0,0]
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 		class:noBackground
 		show earned
 		
@@ -157,8 +158,7 @@ Upgrades
 	*parsley
 		name:Parsley
 		desc:A nice little supplement to your bunnies' diet.<//><b>Effect:</b><.>+1 bunny/click
-		//icon:icons[1,1]
-		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
+		icon:icons[1,1]
 		cost:100 bunnies
 		passive:increase bunny yield of bunnyButton by 1
 		req:10 bunnies:earned
