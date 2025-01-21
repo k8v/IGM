@@ -13,20 +13,20 @@ Settings
 	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Centrale.png
 	stylesheet:stuff/bigBlue.css
 
-//Layout
-//	use default
-	
 Layout
-  *resources
-    contains:Resources
-    header:Ce sont vos ressources.
-  *buildings
-    contains:Buildings
-    header:Ce sont des choses que vous pouvez construire.
-    tooltip origin:left
-  *unlockables
-    contains:Upgrades, Achievements
-    names:hide
+	use default
+	
+//Layout
+  //*resources
+   // contains:Resources
+   // header:Ce sont vos ressources.
+//  *buildings
+//    contains:Buildings
+//    header:Ce sont des choses que vous pouvez construire.
+//    tooltip origin:left
+//  *unlockables
+ //   contains:Upgrades, Achievements
+  //  names:hide
 		
 Buttons
 	*bunnyButton
