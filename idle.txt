@@ -35,8 +35,7 @@ Resources
 		name:Bunny|Bunnies
 		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
 		//icon:icons[0,0]
-                icon:https://e7.pngegg.com/pngimages/548/558/png-clipart-iron-ingot-computer-icons-minecraft-ingots-angle-electronics.png
-		//icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 		class:noBackground
 		show earned
 		
