@@ -157,7 +157,8 @@ Upgrades
 	*parsley
 		name:Parsley
 		desc:A nice little supplement to your bunnies' diet.<//><b>Effect:</b><.>+1 bunny/click
-		icon:icons[1,1]
+		//icon:icons[1,1]
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 		cost:100 bunnies
 		passive:increase bunny yield of bunnyButton by 1
 		req:10 bunnies:earned
