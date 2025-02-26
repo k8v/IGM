@@ -45,16 +45,15 @@ Resources
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 		class:noBackground
 		hidden when 0
-		
-//Shinies
+				
+Shinies
 	*luckyBunny
 		on click:log Woop
 //		movement:onRight moveLeft fade bounce:0.05
 		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere 
-		//frequency:60
-				frequency:1
-				frequency variation:1
-		//frequency variation:30
+		frequency:60
+		frequency variation:30
+//		icon:stuff/luckyBunny.png
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 //		class:bigButton
 		class:hasFlares
@@ -71,7 +70,7 @@ Resources
 				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
 				yield $amount goldenCarrot
 			end
-		end
+		end		
 
 Buildings
 	*TEMPLATE
