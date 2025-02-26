@@ -50,7 +50,8 @@ Shinies
 	*luckyBunny
 		on click:log Woop
 //		movement:onRight moveLeft fade bounce:0.05
-		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere 
+//		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere 
+		movement:growShrink
 		frequency:60
 		frequency variation:30
 //		icon:stuff/luckyBunny.png
