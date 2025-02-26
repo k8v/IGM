@@ -42,7 +42,8 @@ Resources
 	*goldenCarrot|goldenCarrots
 		name:Golden carrot|Golden carrots
 		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
-		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
+		//icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
+		icon:<img src="https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png" width="50" height="50">
 		class:noBackground
 		hidden when 0
 		
