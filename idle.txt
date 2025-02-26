@@ -47,38 +47,31 @@ Resources
 		hidden when 0
 		
 //Shinies
-//	*luckyBunny
-//		on click:log Woop
+	*luckyBunny
+		on click:log Woop
 //		movement:onRight moveLeft fade bounce:0.05
-//		//frequency:60
-//				frequency:1
-//				frequency variation:1
-//		//frequency variation:30
-//		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
-//		class:bigButton
-//		on click:
-//			$boost=1
-//			if (have clover) $boost=4
-//			if (chance(25%))
-//				//get at least 7, or between 1 and 3 minutes of our bunny production
-//				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
-//				toast The lucky bunny grants you<//><b>[$amount] bunnies</b>.
-//				yield $amount bunnies
-//			else
-//				$amount=1*$boost
-//				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
-//				yield $amount goldenCarrot
-//			end
-//		end
-
-Shinies
-	*luckyCoin
-		on click:yield (random(coins:ps*120,coins:ps*300)) coins
-		frequency:1
-		frequency variation:1
 		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere 
-		class:hasFlares
+		//frequency:60
+				frequency:1
+				frequency variation:1
+		//frequency variation:30
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
+//		class:bigButton
+		class:hasFlares
+		on click:
+			$boost=1
+			if (have clover) $boost=4
+			if (chance(25%))
+				//get at least 7, or between 1 and 3 minutes of our bunny production
+				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
+				toast The lucky bunny grants you<//><b>[$amount] bunnies</b>.
+				yield $amount bunnies
+			else
+				$amount=1*$boost
+				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
+				yield $amount goldenCarrot
+			end
+		end
 
 Buildings
 	*TEMPLATE
