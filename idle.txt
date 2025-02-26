@@ -21,8 +21,8 @@ Buttons
 		name:Fabrique du métal
 		desc:Cliquez sur la centrale pour obtenir du métal!
 		on click:anim icon wobble
-		on click:yield 1 roche
-		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCasque
+		on click:yield 1 bunny
+		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Centrale.png
 		no text
 		class:bigButton hasFlares
@@ -31,43 +31,20 @@ Buttons
 		tooltip class:red
 		
 Resources
-	*roche|roches
-		name:Roche|Roches
-		desc:Ce sont vos roches. Vous pouvez les utiliser pour acheter des choses. Votre objectif est d'avoir autant de roches que possible!
+	*bunny|bunnies
+		name:Bunny|Bunnies
+		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
 		//icon:icons[0,0]
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 		class:noBackground
 		show earned
 		
-	*goldenCasque|goldenCasques
-		name:Golden casque|Golden casques
-		desc:Ces casques dorés sont terriblement rares, terriblement précieux et terriblement robustes!
+	*goldenCarrot|goldenCarrots
+		name:Golden carrot|Golden carrots
+		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 		class:noBackground
 		hidden when 0
-				
-Shinies
-	*luckyBunny
-		on click:log Woop
-		movement:onRight moveLeft fade bounce:0.05
-		frequency:60
-		frequency variation:30
-		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
-		class:hasFlares
-		on click:
-			$boost=1
-			if (have clover) $boost=4
-			if (chance(25%))
-				//obtenez au moins 7, ou entre 1 et 3 minutes de notre production de roches
-				$amount=max(7,random(roches:ps*60*1,roches:ps*60*3))*$boost
-				toast Le lapin chanceux vous accorde<//><b>[$amount] roches</b>.
-				yield $amount roches
-			else
-				$amount=1*$boost
-				toast Le lapin chanceux vous accorde<//><b>[$amount] golden casque[s?$amount]</b>!
-				yield $amount goldenCasque
-			end
-		end
 				
 Shinies
 	*luckyBunny
