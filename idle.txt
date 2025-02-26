@@ -52,8 +52,8 @@ Shinies
 //		movement:onRight moveLeft fade bounce:0.05
 //		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere 
 		movement:growShrink
-		frequency:1 //60
-		frequency variation:1 //30
+		frequency:1
+		frequency variation:1
 //		icon:stuff/luckyBunny.png
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 //		class:bigButton
