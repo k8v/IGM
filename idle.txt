@@ -54,8 +54,7 @@ Shinies
 				frequency:1
 				frequency variation:1
 		//frequency variation:30
-		icons, 48 by 48,:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
-		//icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
+		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 		class:bigButton
 		on click:
 			$boost=1
