@@ -1,7 +1,7 @@
 Let's make a game!
 	name:NUC-Clicker
 	by:K8V
-	desc:"Ceci est un jeu idle simple pour <b>démanteler une centrale</b>. <//> <q>Bonus si tu touches le golden casque de chantier !</q>"
+	desc:"Ceci est un jeu idle simple pour <b>démanteler une centrale</b>. <//> <q>Bonus si tu touches le Goldencasque de chantier !</q>"
 	created:14/01/2025
 	updated:14/01/2025
 	version:1
@@ -22,7 +22,7 @@ Buttons
 		desc:Cliquez pour obtenir du minerai !
 		on click:anim icon wobble
 		on click:yield 1 minerais
-		on click:if (have goldenTouch and chance(1%)) yield 1 Golden casque
+		on click:if (have goldenTouch and chance(1%)) yield 1 Goldencasque
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/Centrale.png
 		no text
 		class:bigButton hasFlares
@@ -40,7 +40,7 @@ Resources
 		show earned
 		
 	*Goldencasque|Goldencasques
-		name:Golden casque|Golden casques
+		name:Goldencasque|Goldencasques
 		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 		class:noBackground
@@ -65,8 +65,8 @@ Shinies
 				yield $amount minerais
 			else
 				$amount=1*$boost
-				toast The lucky minerais grants you<//><b>[$amount] Golden casque[s?$amount]</b>!
-				yield $amount Golden casque
+				toast The lucky minerais grants you<//><b>[$amount] Goldencasque[s?$amount]</b>!
+				yield $amount Goldencasque
 			end
 		end		
 
@@ -118,7 +118,7 @@ Buildings
 		name:Rabbit village|Rabbit villages
 		desc:Your minerais are building their own villages now!<//><b>Effect:</b><.>Produces 300 rabbits per second.
 		icon:icons[3,5]
-		cost:200000 minerais, 1 Golden casque
+		cost:200000 minerais, 1 Goldencasque
 		on tick:yield 300 minerais
 		req:200000 minerais:earned and independenceDay
 		
@@ -126,7 +126,7 @@ Buildings
 		name:Rabbit city|Rabbit cities
 		desc:A bustling little city, populated with busy rabbits.<//><b>Effect:</b><.>Produces 1000 rabbits per second.
 		icon:icons[3,6]
-		cost:3000000 minerais, 4 Golden casques
+		cost:3000000 minerais, 4 Goldencasques
 		on tick:yield 1000 minerais
 		req:3000000 minerais:earned and independenceDay
 		
@@ -134,9 +134,9 @@ Buildings
 		name:Moon citadel|Moon citadels
 		desc:An ornate palace standing on the moon, ruled by minerais kings and queens and staffed with royal minerais guards.<//><b>Effect:</b><.>Produces 4000 rabbits per second.
 		icon:icons[3,7]
-		cost:70000000 minerais, 16 Golden casques
+		cost:70000000 minerais, 16 Goldencasques
 		on tick:yield 4000 minerais
-		on tick:if (have moonGardens) yield 0.01 Golden casque
+		on tick:if (have moonGardens) yield 0.01 Goldencasque
 		req:70000000 minerais:earned and independenceDay
 		
 	*fortress
@@ -144,7 +144,7 @@ Buildings
 		text:Freedom fortress ([this]%)
 		desc:A huge minerais castle. A monument to the adventurous spirit of mineraiskind, which will take time and effort to complete.<//><b>The fortress is [this]% complete.</b>
 		icon:icons[3,8]
-		cost:300000000 minerais, 100 Golden casques
+		cost:300000000 minerais, 100 Goldencasques
 		req:70000000 minerais:earned and independenceDay
 		limit:100
 		cost increase:105%
@@ -319,43 +319,43 @@ Upgrades
 		passive:multiply yield of citadel by 2
 		req:10 citadels
 		
-	//Golden casque upgrades
+	//Goldencasque upgrades
 	
 	*goldenTouch
 		name:Golden touch
-		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 Golden casque per minerais click
+		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 Goldencasque per minerais click
 		icon:icons[2,5]
-		cost:1 Golden casque
-		req:1 Golden casque:earned
+		cost:1 Goldencasque
+		req:1 Goldencasque:earned
 		
 	*rabbitHaste
 		name:Rabbit's haste
 		desc:I'm late! I'm late! For a very important date!<//><b>Effect:</b><.>lucky minerais appear 30% more often
 		icon:icons[2,6]
 		passive:multiply frequency of luckyminerais by 0.7
-		cost:5 Golden casques
-		req:1 Golden casque:earned
+		cost:5 Goldencasques
+		req:1 Goldencasque:earned
 	
 	*independenceDay
 		name:Independence day
 		desc:Your minerais are making their first step towards declaring their independence from the oppressive shackles of pens and cages.<//><b>Effect:</b><.>unlocks new buildings
 		icon:icons[2,7]
-		cost:10 Golden casques
-		req:5 Golden casques:earned
+		cost:10 Goldencasques
+		req:5 Goldencasques:earned
 		
 	*clover
 		name:Clover
 		desc:A delicious herb that tastes lucky.<//><b>Effect:</b><.>lucky minerais effects are 4 times more powerful
 		icon:icons[2,8]
-		cost:100 Golden casques
-		req:50 Golden casques:earned
+		cost:100 Goldencasques
+		req:50 Goldencasques:earned
 		
 	*moonGardens
 		name:Moon gardens
-		desc:The royal botanists in your moon citadels have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon citadels now produce 1 Golden casque every 100 seconds
+		desc:The royal botanists in your moon citadels have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon citadels now produce 1 Goldencasque every 100 seconds
 		icon:icons[2,9]
-		cost:100 Golden casques
-		req:50 Golden casques:earned
+		cost:100 Goldencasques
+		req:50 Goldencasques:earned
 		
 Achievements
 	*TEMPLATE
@@ -411,18 +411,18 @@ Achievements
 		
 	*carrotAchiev1
 		name:Isn't it neat
-		desc:Have <b>1</b> Golden casque.
-		req:1 Golden casque
+		desc:Have <b>1</b> Goldencasque.
+		req:1 Goldencasque
 		icon:icons[0,1] icons[0,2]
 	*carrotAchiev2
 		name:All that glitters
-		desc:Have <b>100</b> Golden casque.
-		req:100 Golden casque
+		desc:Have <b>100</b> Goldencasque.
+		req:100 Goldencasque
 		icon:icons[0,1] icons[0,3]
 	*carrotAchiev3
 		name:Zero nutritional value
-		desc:Have <b>1000</b> Golden casque.
-		req:1000 Golden casque
+		desc:Have <b>1000</b> Goldencasque.
+		req:1000 Goldencasque
 		icon:icons[0,1] icons[0,4]
 	
 	*fortressAchiev
