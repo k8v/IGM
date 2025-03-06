@@ -19,7 +19,7 @@ Layout
 Buttons
 	*mineraisButton
 		name:Fabrique de minerais
-		desc:Cliquez sur la centrale pour obtenir du minerai !
+		desc:Cliquez pour obtenir du minerai !
 		on click:anim icon wobble
 		on click:yield 1 minerais
 		on click:if (have goldenTouch and chance(1%)) yield 1 Golden casque
