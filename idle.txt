@@ -31,16 +31,16 @@ Buttons
 		tooltip class:red
 		
 Resources
-	*minerais|minerais
-		name:minerais|minerais
+	*minerai|minerais
+		name:minerai|minerais
 		desc:These are your minerais. You can use them to purchase things. Your goal is to have as many minerais as possible!
 		//icon:icons[0,0]
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/caillou.png
 		class:noBackground
 		show earned
 		
-	*Golden casque|Golden casques
-		name:Golden casque|Golden casque
+	*Goldencasque|Goldencasques
+		name:Golden casque|Golden casques
 		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
 		icon:https://raw.githubusercontent.com/k8v/IGM/refs/heads/main/lucky.png
 		class:noBackground
